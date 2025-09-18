@@ -47,5 +47,8 @@
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));
+    /* if scroller__inner has gap minus half of that gap
+    from -50% like so 👇 to avoid lagging
+    transform: translateY(calc(-50% - 0.5rem)); */
   }
 }
